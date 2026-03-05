@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Work - 炫酷前端展示</title>
+    <title>春笋联盟 - 智能体工作室</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <div id="particles-js"></div>
@@ -14,85 +15,199 @@
         <div class="container">
             <nav class="navbar">
                 <div class="logo">
-                    <span class="logo-text">AI Work</span>
+                    <span class="logo-text">春笋联盟</span>
                     <div class="logo-glow"></div>
                 </div>
                 <ul class="nav-links">
-                    <li><a href="#features">特性</a></li>
-                    <li><a href="#demo">演示</a></li>
+                    <li><a href="#agents">智能体</a></li>
+                    <li><a href="#studio">工作室</a></li>
+                    <li><a href="#monitor">监控</a></li>
                     <li><a href="#contact">联系</a></li>
                 </ul>
             </nav>
 
             <div class="hero-content">
                 <h1 class="hero-title">
-                    <span class="glitch" data-text="AI WORK">AI WORK</span>
+                    <span class="glitch" data-text="春笋联盟">春笋联盟</span>
                 </h1>
-                <p class="hero-subtitle">炫酷的前端技术展示</p>
+                <p class="hero-subtitle">智能体工作室 - 让AI为你工作</p>
                 <div class="hero-buttons">
-                    <button class="btn btn-primary" id="startBtn">开始探索</button>
+                    <button class="btn btn-primary" id="startBtn">启动工作室</button>
                     <button class="btn btn-secondary">了解更多</button>
                 </div>
             </div>
 
             <div class="hero-scene">
                 <div class="floating-elements">
-                    <div class="element element-1">🚀</div>
+                    <div class="element element-1">🤖</div>
                     <div class="element element-2">⚡</div>
-                    <div class="element element-3">💎</div>
-                    <div class="element element-4">🔥</div>
+                    <div class="element element-3">💡</div>
+                    <div class="element element-4">🚀</div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section id="features" class="features">
+    <section id="agents" class="agents">
         <div class="container">
-            <h2 class="section-title">主要特性</h2>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">🎨</div>
-                    <h3>炫酷设计</h3>
-                    <p>采用最新的前端技术和设计趋势，打造令人惊艳的用户体验</p>
+            <h2 class="section-title">智能体阵容</h2>
+            <div class="agents-grid">
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI助手</h3>
+                    <p>智能对话和任务处理</p>
+                    <div class="agent-status active">
+                        <span class="status-dot"></span>
+                        <span>在线</span>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>高性能</h3>
-                    <p>优化的代码结构和资源加载，确保页面快速响应和流畅交互</p>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>代码专家</h3>
+                    <p>编程和开发支持</p>
+                    <div class="agent-status active">
+                        <span class="status-dot"></span>
+                        <span>在线</span>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">📱</div>
-                    <h3>响应式</h3>
-                    <p>完美适配各种设备尺寸，从桌面到手机都能获得最佳体验</p>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>数据分析</h3>
+                    <p>数据处理和洞察</p>
+                    <div class="agent-status active">
+                        <span class="status-dot"></span>
+                        <span>在线</span>
+                    </div>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">🔧</div>
-                    <h3>现代化</h3>
-                    <p>使用ES6+语法和现代前端框架，代码简洁易维护</p>
+                <div class="agent-card">
+                    <div class="agent-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>设计大师</h3>
+                    <p>UI/UX设计和优化</p>
+                    <div class="agent-status active">
+                        <span class="status-dot"></span>
+                        <span>在线</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="demo" class="demo">
+    <section id="studio" class="studio">
         <div class="container">
-            <h2 class="section-title">实时演示</h2>
-            <div class="demo-container">
-                <div class="demo-box">
-                    <div class="demo-header">
-                        <div class="demo-dots">
+            <h2 class="section-title">工作室控制台</h2>
+            <div class="studio-grid">
+                <div class="console-panel">
+                    <div class="panel-header">
+                        <div class="panel-dots">
                             <span class="dot red"></span>
                             <span class="dot yellow"></span>
                             <span class="dot green"></span>
                         </div>
-                        <div class="demo-title">控制台</div>
+                        <div class="panel-title">智能体状态</div>
                     </div>
-                    <div class="demo-content">
-                        <div class="terminal-line">> 初始化炫酷前端展示...</div>
-                        <div class="terminal-line">> 加载粒子效果系统...</div>
-                        <div class="terminal-line">> 渲染3D动画元素...</div>
-                        <div class="terminal-line">> ✅ 所有组件加载完成</div>
-                        <div class="terminal-line">> 🎉 前端展示准备就绪！</div>
+                    <div class="panel-content">
+                        <div class="status-item">
+                            <span class="status-label">CPU使用率</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 65%"></div>
+                            </div>
+                            <span class="status-value">65%</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">内存使用</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 45%"></div>
+                            </div>
+                            <span class="status-value">45%</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">网络延迟</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 25%"></div>
+                            </div>
+                            <span class="status-value">25ms</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">任务队列</span>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                            <span class="status-value">80%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="console-panel">
+                    <div class="panel-header">
+                        <div class="panel-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="panel-title">任务日志</div>
+                    </div>
+                    <div class="panel-content">
+                        <div class="log-line">> 启动春笋联盟工作室...</div>
+                        <div class="log-line">> 加载智能体模块...</div>
+                        <div class="log-line">> 初始化监控服务...</div>
+                        <div class="log-line">> ✅ 所有系统就绪</div>
+                        <div class="log-line">> 🎉 春笋联盟运行中！</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="monitor" class="monitor">
+        <div class="container">
+            <h2 class="section-title">实时监控</h2>
+            <div class="monitor-grid">
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>服务器状态</h3>
+                        <p class="metric-value">98.5%</p>
+                        <p class="metric-label">正常运行</p>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>处理速度</h3>
+                        <p class="metric-value">1.2K</p>
+                        <p class="metric-label">任务/分钟</p>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>活跃智能体</h3>
+                        <p class="metric-value">12</p>
+                        <p class="metric-label">在线</p>
+                    </div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="metric-info">
+                        <h3>运行时间</h3>
+                        <p class="metric-value">72</p>
+                        <p class="metric-label">小时</p>
                     </div>
                 </div>
             </div>
@@ -103,14 +218,15 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>AI Work</h3>
-                    <p>炫酷前端技术展示平台</p>
+                    <h3>春笋联盟</h3>
+                    <p>智能体工作室 - 让AI为你工作</p>
                 </div>
                 <div class="footer-section">
                     <h4>快速链接</h4>
                     <ul>
-                        <li><a href="#features">特性</a></li>
-                        <li><a href="#demo">演示</a></li>
+                        <li><a href="#agents">智能体</a></li>
+                        <li><a href="#studio">工作室</a></li>
+                        <li><a href="#monitor">监控</a></li>
                         <li><a href="#contact">联系</a></li>
                     </ul>
                 </div>
@@ -120,12 +236,12 @@
                         <li>HTML5</li>
                         <li>CSS3</li>
                         <li>JavaScript</li>
-                        <li>粒子效果</li>
+                        <li>AI智能体</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 AI Work. 炫酷前端展示</p>
+                <p>&copy; 2024 春笋联盟. 智能体工作室</p>
             </div>
         </div>
     </footer>
